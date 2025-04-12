@@ -1,4 +1,4 @@
-# FastAPI Task Management API
+# Task Management API
 
 A RESTful API for task management built with FastAPI and SQLModel, using PostgreSQL as the database backend. This API allows users to sign up, manage their profiles, and handle tasks with various operations.
 
