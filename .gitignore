@@ -1,0 +1,91 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+myenv/
+env.bak/
+venv.bak/
+
+# Virtual environment
+bin/
+include/
+lib64
+pyvenv.cfg
+share/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# FastAPI specific
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+
+# Database files
+*.db
+*.sqlite3
+*.sqlite
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Temporary files
+tmp/
+temp/
+
+# Configuration files with secrets
+config.ini
+secrets.json
+*.pem
+*.key
+
+# Alembic migration specific
+alembic.ini
+alembic/versions/*
+!alembic/versions/.gitkeep
+
+# API documentation
+docs/_build/
+docs/api-docs.json
+
+# Node modules (if using frontend)
+node_modules/
+package-lock.json
