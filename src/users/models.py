@@ -1,19 +1,15 @@
-from sqlmodel import SQLModel, Field, Column, Relationship
-import sqlalchemy.dialects.postgresql as pg
-from datetime import datetime
 import uuid
-from typing import List
+from datetime import datetime
+
+import sqlalchemy.dialects.postgresql as pg
+from sqlmodel import Column, Field, SQLModel
+
 
 class User(SQLModel, table=True):
     __tablename__ = "users"
 
     uid: uuid.UUID = Field(
-        sa_column= Column(
-            pg.UUID,
-            nullable=False,
-            primary_key=True,
-            default=uuid.uuid4
-        )
+        sa_column=Column(pg.UUID, nullable=False, primary_key=True, default=uuid.uuid4)
     )
     email: str
     password: str = Field(exclude=True)

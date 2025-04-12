@@ -1,8 +1,10 @@
-from pydantic import BaseModel
-from typing import Optional
 import uuid
-from .models import TaskStatus
 from datetime import datetime
+from typing import Optional
+
+from pydantic import BaseModel
+
+from .models import TaskStatus
 
 
 class Task(BaseModel):
@@ -13,10 +15,12 @@ class Task(BaseModel):
     status: TaskStatus
     created_at: datetime
 
+
 class TaskCreateModel(BaseModel):
     name: str
     description: str
     user_id: uuid.UUID
+
 
 class TaskUpdateModel(BaseModel):
     name: Optional[str] = None
